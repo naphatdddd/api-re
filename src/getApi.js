@@ -10,7 +10,7 @@ export default class getApi extends Component {
         }
     }
     componentDidMount() {
-        axios.get('http://127.0.0.1:3001/api/shop/5d53b8dabb8d365b8073d1ae')
+        axios.get('https://node-api-123.herokuapp.com/staff')
         .then(response => {
             console.log(response)
             this.setState({ports: response.data})
