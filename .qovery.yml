@@ -1,0 +1,18 @@
+---
+application:
+  name: "api-re"
+  project: "test-db"
+  organization: "QoveryCommunity"
+databases:
+- type: "MONGODB"
+  name: "express"
+  version: "4.4"
+- type: "MYSQL"
+  name: "express"
+  version: "8"
+routers:
+- name: "main-api-re"
+  routes:
+  - application_name: "api-re"
+    paths:
+    - "/*"
